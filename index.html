@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Introduction</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .preface {
+      padding: 30px 20px;
+      text-align: center;
+      background: #1a1a1a;
+      animation: slideUp 1.5s ease;
+    }
+
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .director-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      background: #131313;
+      animation: fadeIn 2s ease;
+    }
+
+    .director-section img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #444;
+      transition: transform 0.4s ease;
+    }
+
+    .director-section img:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    .university-info {
+      padding: 40px 20px;
+      background: #1a1a1a;
+      line-height: 1.7;
+      animation: fadeIn 2s ease;
+    }
+
+    h2 {
+      color: #66aaff;
+      text-align: center;
+    }
+
+    .faculty-section {
+      padding: 30px 20px;
+      background: #131313;
+    }
+
+    .faculty-list {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 10px;
+      scroll-behavior: smooth;
+      animation: slideUp 2s ease;
+    }
+
+    .faculty-card {
+      flex: 0 0 auto;
+      width: 180px;
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .faculty-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .faculty-card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our University</h1>
+  </header>
+
+  <section class="preface">
+    <p>
+      Welcome to an institution built on knowledge, innovation, and vision. Our university embraces a legacy of excellence
+      and a future of limitless possibilities.
+    </p>
+  </section>
+
+  <section class="director-section">
+    <img src="https://loremflickr.com/200/200/person,portrait/all" alt="Director Photo" />
+    <h2>Director Name</h2>
+    <p>
+      Our honorable director leads the institution with a vision of academic excellence,
+      innovation, and holistic development of students.
+    </p>
+  </section>
+
+  <section class="university-info">
+    <h2>About the University</h2>
+    <p>
+      Founded with the mission of delivering world‑class education, our university is
+      known for its strong academic programs, industry collaborations, and modern
+      infrastructure. We aim to nurture future leaders equipped with knowledge,
+      values, and global perspectives.
+    </p>
+  </section>
+
+  <section class="faculty-section">
+    <h2>Our Faculty</h2>
+    <div class="faculty-list">
+      <div class="faculty-card">
+        <img src="https://loremflickr.com/160/120/teacher,professor/all" alt="Faculty 1" />
+        <p>Faculty Member 1</p>
+      </div>
+      <div class="faculty-card">
+        <img src="https://loremflickr.com/160/120/teacher,professor/all" alt="Faculty 2" />
+        <p>Faculty Member 2</p>
+      </div>
+      <div class="faculty-card">
+        <img src="https://loremflickr.com/160/120/teacher,professor/all" alt="Faculty 3" />
+        <p>Faculty Member 3</p>
+      </div>
+      <div class="faculty-card">
+        <img src="https://loremflickr.com/160/120/teacher,professor/all" alt="Faculty 4" />
+        <p>Faculty Member 4</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="campus-life" style="padding:40px 20px; background:#1a1a1a; animation:fadeIn 2s ease; line-height:1.7;">
+    <h2>Campus Life</h2>
+    <p>
+      Our vibrant campus offers students a dynamic blend of academics, culture, and recreation. With state-of-the-art
+      laboratories, digital libraries, sports arenas, creativity hubs, and student‑driven clubs, learners experience a
+      journey that shapes both their intellect and character.
+    </p>
+  </section>
+
+  <section class="achievements" style="padding:40px 20px; background:#131313; animation:slideUp 2s ease; line-height:1.7;">
+    <h2>Achievements</h2>
+    <ul style="max-width:900px; margin:auto; list-style:circle;">
+      <li>Ranked among the top 10 universities in the region for research output.</li>
+      <li>National‑level excellence awards for innovation and technology development.</li>
+      <li>Strong placement record with partnerships across global industries.</li>
+      <li>Leading center for interdisciplinary programs and advanced labs.</li>
+    </ul>
+  </section>
+
+  <section class="contact" style="padding:40px 20px; background:#1a1a1a; animation:fadeIn 2s ease;">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">
+      Address: 123 University Avenue, Knowledge City<br>
+      Email: info@university.edu<br>
+      Phone: +1 234 567 890
+    </p>
+  </section>
+
+  <section class="vision-mission" style="padding:40px 20px; background:#131313; line-height:1.7; animation:fadeIn 2s ease;">
+    <h2>Vision & Mission</h2>
+    <p><strong>Vision:</strong> To be a global center of academic excellence, fostering innovation and leadership for a sustainable future.</p>
+    <p><strong>Mission:</strong> To provide inclusive, high-quality education that empowers students with skills, knowledge, and values to excel in a rapidly evolving world.</p>
+  </section>
+
+  <section class="departments" style="padding:40px 20px; background:#1a1a1a; animation:slideUp 2s ease; line-height:1.7;">
+    <h2>Departments</h2>
+    <ul style="max-width:900px; margin:auto; list-style:square;">
+      <li>Department of Computer Science & Engineering</li>
+      <li>Department of Electronics & Communication</li>
+      <li>Department of Mechanical Engineering</li>
+      <li>Department of Business Administration</li>
+      <li>Department of Arts & Humanities</li>
+      <li>Department of Biological Sciences</li>
+    </ul>
+  </section>
+
+  <section class="courses" style="padding:40px 20px; background:#131313; animation:fadeIn 2s ease; line-height:1.7;">
+    <h2>Popular Courses</h2>
+    <div style="display:flex; gap:20px; overflow-x:auto; padding:10px;">
+      <div style="min-width:250px; background:#1e1e1e; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4);">
+        <h3 style="color:#66aaff;">B.Tech Computer Science</h3>
+        <p>Learn programming, AI, data science, and modern technologies with hands-on projects.</p>
+      </div>
+      <div style="min-width:250px; background:#1e1e1e; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4);">
+        <h3 style="color:#66aaff;">MBA</h3>
+        <p>Develop managerial skills, leadership qualities, and industry knowledge for global roles.</p>
+      </div>
+      <div style="min-width:250px; background:#1e1e1e; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4);">
+        <h3 style="color:#66aaff;">B.Sc Biotechnology</h3>
+        <p>Explore genetics, microbiology, and bioprocessing through advanced research labs.</p>
+      </div>
+      <div style="min-width:250px; background:#1e1e1e; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4);">
+        <h3 style="color:#66aaff;">BA Psychology</h3>
+        <p>Understand human behavior, cognition, and mental processes through practical learning.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
